@@ -11,15 +11,20 @@
 *{box-sizing:border-box}body{margin:0;width:100%;font-family:'DM Sans',sans-serif;color:var(--ink)}button,input{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--amber);outline-offset:3px}.hidden{display:none!important}
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}.app-shell{position:fixed;inset:0;width:100%;height:100%;background:#e8efee}
 body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pseudo-fs .app-shell{width:var(--fs-w,100%);height:var(--fs-h,100%)}.map-frame{width:100%;height:100%;overflow:hidden;background:#a7b3ad}.site{position:relative;width:100%;height:100%;min-width:0;overflow:hidden;overflow:clip;container-type:inline-size;background:#b9b9a9}main{display:block;width:100%;height:100%}.site:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(22deg,#fff1 0 2px,transparent 2px 13px),radial-gradient(circle at 62% 40%,#c6c9ad,#9ba88e);opacity:.67}.site:after{content:"";position:absolute;inset:1.8%;border:1px solid #ffffff80;pointer-events:none;z-index:10}
-.map-badge{position:absolute;z-index:11;left:50%;top:3%;transform:translateX(-50%);padding:8px 12px;background:var(--bar);border:1px solid #ffffff80;border-radius:4px;box-shadow:2px 3px 0 #20334555}.map-badge-logo{position:absolute;z-index:12;left:50%;bottom:5%;height:clamp(15px,2cqw,27px);width:auto;object-fit:contain;transform:translateX(-50%)}.map-badge-label{font:700 clamp(12px,1.47cqw,20px)/1 'Space Mono',monospace;letter-spacing:.04em;color:var(--title)}
+.map-badge{position:absolute;z-index:11;left:50%;top:3%;transform:translateX(-50%);padding:8px 12px;background:var(--bar);border:1px solid #ffffff80;border-radius:4px;box-shadow:2px 3px 0 #20334555}.map-badge-logo{position:absolute;z-index:19;left:50%;bottom:2.5%;height:clamp(20px,3cqw,40px);width:auto;max-width:40%;object-fit:contain;transform:translateX(-50%);filter:drop-shadow(2px 3px 0 #20334555)}.map-badge-label{font:700 clamp(12px,1.47cqw,20px)/1 'Space Mono',monospace;letter-spacing:.04em;color:var(--title)}
 .road,.road-right{position:absolute;top:0;bottom:0;background:repeating-linear-gradient(2deg,#545d61 0 34px,#555e62 35px,#4f585c 37px)}.road{left:0;width:12%;box-shadow:inset -8px 0 #78837f}.road-right{right:0;width:15%;box-shadow:inset 8px 0 #78837f}.road:before,.road-right:before{content:"";position:absolute;top:0;bottom:0;left:49%;border-left:2px dashed #e7dcc49c}.sidewalk,.sidewalk-right{position:absolute;top:0;height:100%;width:2.8%;background:repeating-linear-gradient(0deg,#b8b8aa 0 39px,#969f96 40px 41px)}.sidewalk{left:12%;border-right:3px solid #ded9c8}.sidewalk-right{right:15%;border-left:3px solid #ded9c8}
 .boundary{position:absolute;left:15%;top:3%;width:81%;height:94%;border:3px solid #87917e;background:#b1b59f;box-shadow:inset 0 0 26px #5d765526}.boundary:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(94deg,transparent 0 17px,#fff1 18px 19px);opacity:.42}.paving{position:absolute;background:#aaa99e;box-shadow:inset 0 0 0 1px #d5d0bd55}.main-lane{left:39%;top:7%;width:8%;height:87%}.upper-court{left:15%;top:46%;width:82%;height:13%;background:#a5a69c}.entry{left:11%;top:48%;width:34%;height:9%;background:#b8b3a7;border-block:2px solid #e1d8c1}.lower-lane{left:15%;top:82%;width:81%;height:5%;background:#a6a69b}
 .green{position:absolute;background:repeating-linear-gradient(108deg,#829d72 0 8px,#90a878 9px 17px,#76936d 18px 20px);border:1px solid #809579}.green-one{left:17%;top:7%;width:3%;height:37%}.green-two{left:35%;top:8%;width:3%;height:36%}.green-three{left:18%;top:60%;width:20%;height:2.4%}.green-four{left:48%;top:25%;width:45%;height:2.4%}.green-five{left:48%;top:45%;width:45%;height:2.4%}.green-six{left:48%;top:66%;width:45%;height:2.4%}.green-bottom{left:48%;top:88%;width:45%;height:5%}.tree{position:absolute;width:2.2%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 27%,#a9bd85,#5b8058 65%,#416449);box-shadow:2px 3px 4px #364b3580}
 .building{position:absolute;z-index:2;overflow:hidden;border:3px solid #e3e1d2;box-shadow:4px 6px 0 #565e5a85,6px 9px 12px #253b3940}.building:before{content:"";position:absolute;inset:6%;border:1px solid #ffffff78;pointer-events:none}.building:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 11%,#fff2 11.3% 12%,transparent 12.4% 23%);mix-blend-mode:screen}.building.b1,.building.b3,.building.b4,.building.b5,.building.b6{cursor:pointer;transition:filter .2s,transform .2s}.building:is(:hover,.is-active){filter:brightness(1.14) saturate(1.15);transform:translateY(-2px)}.b1{left:21%;top:9%;width:13.5%;height:34%;background:repeating-linear-gradient(90deg,#424b4d 0 14%,#515a5b 15% 17%,#444e50 18% 34%)}.b2{left:19%;top:64%;width:19%;height:17%;background:#8d938f;display:flex;align-items:stretch;justify-content:space-evenly;padding:clamp(20px,2.4cqw,34px) .8cqw .6cqw;gap:.6cqw}.b3{left:49%;top:9%;width:43%;height:14%;background:repeating-linear-gradient(0deg,#c2baa5 0 22%,#ddd4bb 23% 25%,#c4bba8 26% 48%)}.b4{left:49%;top:30%;width:43%;height:13%;background:repeating-linear-gradient(0deg,#b8b6a8 0 15%,#e0dccb 16% 20%,#bcb9a9 21% 37%)}.b5{left:49%;top:50%;width:43%;height:14%;background:linear-gradient(0deg,#c6c3b4 0 39%,#525b5a 40% 53%,#c8c4b3 54%)}.b6{left:49%;top:71%;width:43%;height:14%;background:linear-gradient(90deg,#9b9e99 0 50%,#c8bba4 50%)}
 .roof-name{position:absolute;z-index:3;left:7%;bottom:12%;padding:4px 7px;background:#203345d9;color:white;border-radius:2px;white-space:nowrap;font:700 clamp(8px,.9cqw,13px)/1.2 'Space Mono',monospace;letter-spacing:.04em}.b1 .roof-name{left:50%;bottom:50%;transform:translate(-50%,50%) rotate(-90deg)}.b3 .roof-name,.b4 .roof-name,.b5 .roof-name,.b6 .roof-name{left:50%;top:50%;bottom:auto;transform:translate(-50%,-50%);text-align:center;border:1px solid #ffffff90;box-shadow:1px 2px 0 #20334566}.b3 .roof-name{background:var(--blue)}.b4 .roof-name{background:var(--yellow);color:var(--ink)}.b5 .roof-name{background:var(--green)}.b6 .roof-name{background:var(--red)}
 .parking-label{position:absolute;z-index:5;left:50%;top:8%;transform:translateX(-50%);padding:2px 4px;background:#203345d9;color:white;white-space:nowrap;font:700 clamp(7px,.8cqw,11px)/1 'Space Mono',monospace}.parking-space{position:relative;display:flex;align-items:center;justify-content:center;width:23%;height:100%;border-inline:2px solid #e9e6d5c0}.car{position:relative;z-index:4;display:block;width:100%;height:100%;filter:drop-shadow(2px 3px 2px #0007);cursor:pointer;transition:transform .12s,filter .12s}.car:hover,.car:focus-visible{filter:drop-shadow(2px 3px 2px #0007) brightness(1.18);transform:translateY(-2px)}.car.honk{animation:car-honk .3s ease-in-out 2}.car.alarm{animation:car-alarm .25s steps(2) infinite}.car-fx{position:absolute;z-index:8;left:50%;top:38%;transform:translate(-50%,-50%);padding:4px 6px;border:2px solid #203345;border-radius:4px;background:#f2c230;color:#203345;white-space:nowrap;font:700 clamp(7px,.75cqw,11px)/1 'Space Mono',monospace;pointer-events:none;animation:car-fx-pop .9s ease-out forwards}.car-fx.alarm{background:#c0392b;color:#fff;animation:car-fx-alarm 3.1s ease-out forwards}@keyframes car-honk{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}@keyframes car-alarm{50%{filter:drop-shadow(2px 3px 2px #0007) brightness(1.55)}}@keyframes car-fx-pop{to{opacity:0;transform:translate(-50%,-95%) scale(.8)}}@keyframes car-fx-alarm{0%,80%{opacity:1}100%{opacity:0;transform:translate(-50%,-95%) scale(.9)}}
-.map-label{position:absolute;z-index:9;color:var(--ink);background:#f7faf7e8;border-radius:3px;padding:4px 7px;font:700 clamp(9px,1.05cqw,14px)/1.2 'Space Mono',monospace;letter-spacing:.1em;white-space:nowrap}.road-label{left:.8%;top:22%;transform:rotate(-90deg);background:#283b45;color:white}.entry-label{left:15%;top:52.2%;z-index:6;background:var(--amber)}.solar{position:absolute;z-index:2;left:18%;top:85%;width:20%;height:10%;padding:5px;background:#858e86;border:2px solid #e0ded1;display:grid;grid-template-columns:repeat(6,1fr);gap:3px;box-shadow:3px 4px 5px #39443d60}.solar span{background:repeating-linear-gradient(90deg,#253e49 0 40%,#436375 41% 47%,#263f4c 48%);border:1px solid #9babb0}.solar-label{left:20%;top:81.6%}.north{right:3%;top:3%}
-.school-bus{position:absolute;z-index:8;left:5.1%;top:105%;width:5.2%;height:15%;border:2px solid #25343b;border-radius:7px 7px 4px 4px;background:var(--amber);box-shadow:3px 4px 4px #253b3959;animation:bus-route 36s linear infinite}.school-bus.second-bus{background:#b94a43;animation-delay:18s}.school-bus:before{content:"";position:absolute;inset:18% 9% 16%;border:2px solid #ad721e;background:repeating-linear-gradient(0deg,#557b83 0 13%,#e2e4d6 14% 17%,#557b83 18% 29%);border-radius:3px}.school-bus:after{content:"";position:absolute;left:15%;right:15%;top:4%;height:13%;background:#345660;border:2px solid #24363c;border-radius:4px 4px 1px 1px}.bus-stripe{position:absolute;left:36%;top:23%;bottom:20%;width:28%;background:#d89a2f;border-inline:2px solid #f4ca65}.bus-door{position:absolute;right:-3px;top:48%;width:5px;height:19%;background:#283b45;border:1px solid var(--amber)}.bus-tail{position:absolute;left:17%;right:17%;bottom:3%;height:5%;background:#ac3d32}.second-bus .bus-tail{background:var(--yellow)}@keyframes bus-route{0%{top:105%;animation-timing-function:ease-out}5.56%{top:43%}33.33%{top:43%;animation-timing-function:ease-in}37.5%,100%{top:-19%}}
+.map-label{position:absolute;z-index:9;color:var(--ink);background:#f7faf7e8;border-radius:3px;padding:4px 7px;font:700 clamp(9px,1.05cqw,14px)/1.2 'Space Mono',monospace;letter-spacing:.1em;white-space:nowrap}.road-label{left:7%;top:22%;z-index:6;transform:rotate(-90deg);background:#283b45;color:white}.entry-label{left:15%;top:52.2%;z-index:6;background:var(--amber)}.solar{position:absolute;z-index:2;left:18%;top:85%;width:20%;height:10%;padding:5px;background:#858e86;border:2px solid #e0ded1;display:grid;grid-template-columns:repeat(6,1fr);gap:3px;box-shadow:3px 4px 5px #39443d60}.solar span{background:repeating-linear-gradient(90deg,#253e49 0 40%,#436375 41% 47%,#263f4c 48%);border:1px solid #9babb0}.solar-label{left:20%;top:81.6%}.north{right:3%;top:3%}
+.school-bus{position:absolute;z-index:8;left:5.1%;top:105%;width:5.2%;height:15%;border:2px solid #25343b;border-radius:7px 7px 4px 4px;background:var(--amber);box-shadow:3px 4px 4px #253b3959;animation:bus-route 36s linear infinite;cursor:pointer}.school-bus.second-bus{background:#b94a43;animation-delay:18s}.school-bus:before{content:"";position:absolute;inset:18% 9% 16%;border:2px solid #ad721e;background:repeating-linear-gradient(0deg,#557b83 0 13%,#e2e4d6 14% 17%,#557b83 18% 29%);border-radius:3px}.school-bus:after{content:"";position:absolute;left:15%;right:15%;top:4%;height:13%;background:#345660;border:2px solid #24363c;border-radius:4px 4px 1px 1px}.bus-stripe{position:absolute;left:36%;top:23%;bottom:20%;width:28%;background:#d89a2f;border-inline:2px solid #f4ca65}.bus-door{position:absolute;right:-3px;top:48%;width:5px;height:19%;background:#283b45;border:1px solid var(--amber)}.bus-tail{position:absolute;left:17%;right:17%;bottom:3%;height:5%;background:#ac3d32}.second-bus .bus-tail{background:var(--yellow)}@keyframes bus-route{0%{top:105%;animation-timing-function:ease-out}5.56%{top:43%}33.33%{top:43%;animation-timing-function:ease-in}37.5%,100%{top:-19%}}
+.school-bus.gift-ready{animation:bus-route 36s linear infinite,bus-glow 1s ease-in-out infinite}
+@keyframes bus-glow{0%,100%{box-shadow:3px 4px 4px #253b3959,0 0 0 0 #f2c230cc}50%{box-shadow:3px 4px 4px #253b3959,0 0 10px 5px #f2c230cc}}
+.bus-fx{position:absolute;z-index:9;left:50%;top:-6%;transform:translate(-50%,-100%);padding:6px 10px;border:2px solid #203345;border-radius:6px;background:linear-gradient(135deg,#ffe27a,#f2c230);color:#203345;white-space:nowrap;font:700 clamp(9px,1cqw,13px)/1.2 'Space Mono',monospace;pointer-events:none;box-shadow:2px 3px 0 #20334555;animation:bus-fx-pop 2.6s ease-out forwards}
+.bus-fx.bus-fx-neutral{background:#f7faf7;color:var(--ink)}
+@keyframes bus-fx-pop{0%{opacity:0;transform:translate(-50%,-80%) scale(.6)}12%{opacity:1;transform:translate(-50%,-100%) scale(1.05)}20%{transform:translate(-50%,-100%) scale(1)}85%{opacity:1}100%{opacity:0;transform:translate(-50%,-140%) scale(.9)}}
 .student{position:absolute;z-index:7;left:10.5%;top:52%;width:clamp(13px,1.65cqw,23px);height:clamp(13px,1.65cqw,23px);opacity:0;animation:student-route 36s linear infinite;animation-delay:var(--delay);filter:drop-shadow(2px 2px 1px #26394080)}.student .torso{position:absolute;left:25%;top:26%;width:48%;height:43%;border:1px solid #263940;border-radius:40%;background:var(--shirt)}.student .head{position:absolute;left:34%;top:0;width:30%;height:33%;border:1px solid #293840;border-radius:50%;background:radial-gradient(circle at 37% 28%,#342d2b 0 31%,#b77c57 35%)}.student .arm,.student .leg{position:absolute;background:#394047;border-radius:3px}.student .arm{top:33%;width:17%;height:31%;transform-origin:top}.student .arm.left{left:9%;animation:limb .42s ease-in-out infinite alternate}.student .arm.right{right:9%;animation:limb .42s ease-in-out infinite alternate-reverse}.student .leg{top:66%;width:18%;height:30%;transform-origin:top}.student .leg.left{left:28%;animation:limb .42s ease-in-out infinite alternate-reverse}.student .leg.right{right:28%;animation:limb .42s ease-in-out infinite alternate}@keyframes limb{from{transform:rotate(-25deg)}to{transform:rotate(25deg)}}@keyframes student-route{0%,6.9%{left:10.5%;top:52%;opacity:0}6.94%{opacity:1}8.74%{left:16%;top:52%;opacity:1}15.04%{left:42%;top:53%;opacity:1}17.29%{left:49%;top:56%;opacity:1}19.09%,100%{left:54%;top:56%;opacity:0}}
 .map-controls{position:absolute;z-index:20;right:3%;bottom:3%;display:flex;gap:8px}.sound-control{min-width:44px;min-height:44px;padding:10px 14px;border:1px solid #ffffff9c;border-radius:5px;background:var(--ink);color:white;box-shadow:3px 4px 0 #20334555;font:700 13px 'Space Mono',monospace}.sound-control:hover{background:#344c5c}.sound-control:disabled{opacity:.75}.sound-off,.fs-exit{display:none}.sound-control.is-on .sound-on,.fs-control.is-on .fs-enter{display:none}.sound-control.is-on .sound-off,.fs-control.is-on .fs-exit{display:inline-flex}.fs-control svg{width:16px;height:16px}.sound-status{position:absolute;z-index:20;right:3%;bottom:calc(3% + 52px);max-width:250px;padding:6px 9px;background:#203345e8;color:white;font-size:12px}.sound-status:empty{display:none}
 .course-modal{position:absolute;z-index:30;display:none;width:min(330px,calc(100% - 24px));filter:drop-shadow(8px 10px 0 #20334535)}.cm-card{overflow:hidden;background:#f7faf7;border:2px solid var(--c,var(--blue));border-radius:8px}.cm-arr{position:absolute;right:-10px;width:14px;height:14px;background:#f7faf7;border-top:2px solid var(--c);border-right:2px solid var(--c);transform:rotate(45deg)}.cm-head{height:96px;position:relative;display:grid;place-items:center;background:var(--c);border-bottom:2px solid #20334533}.cm-head svg{width:250px;height:96px;max-width:88%}.cm-x{position:absolute;right:8px;top:8px;width:32px;height:32px;border:1px solid #ffffff99;border-radius:50%;background:#203345aa;color:white;font-size:24px}.cm-body{padding:16px}.cm-tag,.cm-chips span{display:inline-block;padding:4px 7px;border-radius:3px;background:var(--amber);font:700 10px 'Space Mono',monospace;text-transform:uppercase}.cm-ttl{margin:11px 0 5px;font:700 22px 'Space Mono',monospace;color:var(--c)}.cm-sub{margin:0;color:#52636c;font-size:13px;line-height:1.45}.cm-st{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:15px 0}.cm-st div{padding:8px 5px;background:#e8efee;border-left:3px solid var(--c)}.cm-st small,.cm-st b{display:block}.cm-st small{font-size:10px}.cm-st b{font:700 11px 'Space Mono',monospace}.cm-chips{display:flex;flex-wrap:wrap;gap:5px}.cm-chips span{background:var(--ink);color:white;font-size:9px}.cm-bob{animation:bob 1.4s ease-in-out infinite}.cm-pulse{animation:pulse 1.2s infinite}@keyframes bob{50%{transform:translateY(-4px)}}@keyframes pulse{50%{opacity:.4}}
@@ -29,9 +34,9 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
 .mission-menu{position:absolute;z-index:35;inset:0;display:grid;place-items:center;padding:18px;background:radial-gradient(circle at 50% 15%,#2c4e6ec0,#152536dd 75%)}
 .mission-card{position:relative;width:min(920px,100%);max-height:95%;overflow:auto;background:linear-gradient(180deg,#ffffff,#f1f7fa);border:2px solid var(--blue);border-radius:14px;box-shadow:9px 11px 0 #20334570;padding:clamp(22px,3vw,34px)}
 .mission-card:before{content:"";position:absolute;inset:0 0 auto 0;height:8px;border-radius:12px 12px 0 0;background:linear-gradient(90deg,var(--blue),var(--green),var(--yellow),var(--red))}
-.mission-card h2{margin:0;display:flex;align-items:center;gap:10px;color:var(--title);font-family:'Space Mono',monospace}
+.mission-card h2{margin:0;display:flex;align-items:center;justify-content:center;gap:10px;color:var(--title);font-family:'Space Mono',monospace;text-align:center}
 .mission-card h2:before{content:"🎮";font-size:1.05em}
-.mission-card>p{margin:8px 38px 26px 0;line-height:1.5;color:#3c5566}
+.mission-card>p{margin:8px auto 26px;max-width:46ch;text-align:center;line-height:1.5;color:#3c5566}
 .menu-close{position:absolute;right:14px;top:12px;min-width:44px;min-height:44px;border:0;border-radius:50%;background:var(--ink);color:white;font-size:26px;transition:transform .25s,background .25s}
 .menu-close:hover,.menu-close:focus-visible{background:var(--red);transform:rotate(90deg)}
 .game-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
@@ -92,7 +97,7 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
 .ranking-list{list-style:none;padding:0;margin:10px 0 16px}.ranking-list li{display:flex;justify-content:space-between;gap:12px;padding:9px 10px;border-bottom:1px solid #cbd7dc;font-size:14px}.ranking-list li.mine{background:#ffedc0;font-weight:700;border-radius:4px}
 
 /* ===== JOGO 1: MONTE O APP ===== */
-.g-app{height:100%;display:grid;grid-template-columns:clamp(150px,16cqw,210px) minmax(0,1fr) clamp(260px,28cqw,340px);gap:14px}
+.g-app{--c:var(--blue);height:100%;display:grid;grid-template-columns:clamp(150px,16cqw,210px) minmax(0,1fr) clamp(260px,28cqw,340px);gap:14px}
 .pl{display:flex;align-items:center;gap:10px;padding:9px;margin-bottom:8px;border-radius:5px;background:#ffffff10;border-left:6px solid var(--c);border-top:2px solid transparent;border-bottom:2px solid transparent}
 .pl .av{width:36px;height:36px;border-radius:50%;background:var(--c);display:grid;place-items:center;font-size:18px;flex:none}.pl b{display:block;font-size:13px}.pl small{display:none;color:var(--amber);font:700 10px/1 'Space Mono',monospace}
 .pl.is-turn{background:#ffffff2e;animation:pl-blink .8s ease-in-out infinite}.pl.is-turn small{display:block}
@@ -108,14 +113,19 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
 .prog{width:min(260px,100%);display:flex;gap:6px}.prog span{flex:1;height:9px;border-radius:5px;background:#ffffff30}.prog span.f{background:var(--amber)}.stage small{color:#c8d6df;font-size:12px}
 .role{display:flex;gap:10px;align-items:center;padding:10px;margin-bottom:10px;border-radius:6px;background:#0003}.role .e{font-size:28px}.role b{display:block;font-size:14px}.role small{display:block;margin-top:2px;color:#c8d6df;font-size:12px;line-height:1.35}
 .desafio{margin:0 0 12px;font-size:15px;font-weight:600;line-height:1.4}
-.blk{display:flex;align-items:center;gap:10px;width:100%;min-height:54px;text-align:left;margin-bottom:8px;padding:10px 12px;border:2px solid #ffffff55;border-radius:6px;background:#ffffff14;color:#fff;font:600 14px/1.25 'DM Sans',sans-serif;transition:transform .15s,background .15s}
-.blk:hover:not(:disabled){transform:translateX(4px);background:#ffffff2a}.blk .t{font-size:22px}.blk:disabled{cursor:default}
-.blk.right{background:var(--green);border-color:#5dcaa5}.blk.wrong{background:var(--red);border-color:#ff8a7a;animation:shake .35s}
+.blk{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:56px;text-align:left;margin-bottom:9px;padding:9px 14px 9px 9px;border:2px solid #ffffff40;border-radius:8px;background:linear-gradient(135deg,#ffffff1c,#ffffff0a);color:#fff;font:600 14px/1.25 'DM Sans',sans-serif;transition:transform .18s,background .18s,border-color .18s,box-shadow .18s;overflow:hidden}
+.blk:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent,#ffffff22,transparent);transform:translateX(-120%);transition:transform .5s}
+.blk:hover:not(:disabled):before{transform:translateX(120%)}
+.blk:hover:not(:disabled),.blk:focus-visible{transform:translateX(5px);background:linear-gradient(135deg,#ffffff32,#ffffff16);border-color:var(--c,#fff);box-shadow:0 0 0 3px color-mix(in srgb,var(--c,#fff) 35%,transparent)}
+.blk .t{display:grid;place-items:center;flex:none;width:38px;height:38px;border-radius:9px;font-size:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--c,#1f6fb2) 55%,#fff),var(--c,#1f6fb2));box-shadow:2px 3px 0 #00000030,inset 0 -2px 0 #0000002e}
+.blk:disabled{cursor:default}
+.blk.right{background:linear-gradient(135deg,var(--green),#17704a);border-color:#5dcaa5;box-shadow:0 0 0 3px #5dcaa555}.blk.right .t{background:#fff;color:var(--green)}
+.blk.wrong{background:linear-gradient(135deg,var(--red),#962e23);border-color:#ff8a7a;animation:shake .35s}.blk.wrong .t{background:#fff;color:var(--red)}
 .hint{min-height:40px;margin:6px 0 0;color:#ffd9a0;font-weight:600;font-size:13px;line-height:1.4}
 .real{padding:12px;border-radius:6px;background:#fff3d9;color:var(--ink);border-left:5px solid var(--amber);line-height:1.5;font-size:14px;margin-bottom:12px}
 
 /* ===== JOGO 2: ROBÔ-ÔNIBUS ===== */
-.g-robo{height:100%;display:grid;grid-template-columns:minmax(0,1fr) clamp(270px,27cqw,340px);gap:14px}
+.g-robo{--c:var(--green);height:100%;display:grid;grid-template-columns:minmax(0,1fr) clamp(270px,27cqw,340px);gap:14px}
 .robo-left{min-height:0;display:flex;flex-direction:column;gap:10px}
 .robo-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font:700 13px/1.2 'Space Mono',monospace}.robo-head b{color:var(--amber)}.robo-head span{color:#c8d6df;font-weight:400}
 .map-wrap{flex:1;min-height:0;display:grid;place-items:center}
@@ -137,7 +147,7 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
 .rb-light{width:6%;height:18%;background:#ffe27a;right:-3px}.rb-light.a{top:8%}.rb-light.b{bottom:8%}
 .rb-tail{left:-3px;top:22%;bottom:22%;width:5%;background:#c0392b}
 .prof{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border-radius:6px;background:#f7faf7;color:var(--ink);border:2px solid var(--blue);min-height:66px;font-size:13px;line-height:1.45}
-.prof .av{font-size:28px;line-height:1}.prof b{color:var(--title)}.prof p{margin:2px 0 0}#prof-act{margin-top:6px}
+.prof .av{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--blue);box-shadow:2px 3px 0 #20334540}.prof b{color:var(--title)}.prof p{margin:2px 0 0}#prof-act{margin-top:6px}
 .robo-side{display:flex;flex-direction:column;gap:10px}
 .prog-box{flex:1;min-height:84px;overflow:auto;display:flex;flex-wrap:wrap;align-content:flex-start;gap:6px;padding:8px;background:#0003;border-radius:6px}
 .prog-box .vazio{color:#c8d6df;font-size:12px;line-height:1.4}
@@ -152,21 +162,21 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
 .rule-opts{display:grid;gap:8px}.rule-opts .blk{margin:0}.rule-step{margin:0;font-size:13px;color:#ffd9a0;font-weight:600}
 
 /* ===== JOGO 3: CHEFÃO BUG ===== */
-.g-bug{height:100%;display:grid;grid-template-columns:minmax(0,1.25fr) clamp(290px,31cqw,390px);gap:14px}
+.g-bug{--c:var(--red);height:100%;display:grid;grid-template-columns:minmax(0,1.25fr) clamp(290px,31cqw,390px);gap:14px}
 .arena{position:relative;min-height:0;display:flex;flex-direction:column;border:3px solid #e3e1d2;border-radius:6px;overflow:hidden;background:repeating-linear-gradient(0deg,#ffffff0d 0 2px,transparent 2px 16px),repeating-linear-gradient(90deg,#ffffff0d 0 2px,transparent 2px 16px),linear-gradient(180deg,#1a1033,#2b1b57 55%,#3a2a6b)}
 .bug-hud{display:flex;align-items:center;gap:14px;padding:10px 14px;background:#0008;font:700 11px/1 'Space Mono',monospace}.hpbox{flex:1}.hpbar{height:16px;border:2px solid #fff;background:#000;margin-top:5px}.hpbar i{display:block;height:100%;width:100%;background:repeating-linear-gradient(90deg,#ff5a4d 0 10px,#d83a2e 10px 12px);transition:width .5s steps(8)}.lives{font-size:18px;letter-spacing:2px}
 .boss{flex:1;min-height:0;display:grid;place-items:center;position:relative}
 .bug{font-size:clamp(90px,15cqw,170px);line-height:1;filter:drop-shadow(0 12px 0 #0007);animation:bob 1.6s steps(4) infinite;user-select:none}.bug.hit{animation:bug-hit .45s steps(5) 1}.bug.atk{animation:bug-atk .5s steps(5) 1}.bug.dead{animation:none;transform:rotate(90deg) scale(.7);opacity:.35;filter:grayscale(1)}
 @keyframes bug-hit{20%{transform:translateX(-14px);filter:brightness(2.5) saturate(0)}60%{transform:translateX(14px);filter:brightness(2.5)}}@keyframes bug-atk{50%{transform:scale(1.3) translateY(24px)}}
 .dmg{position:absolute;top:24%;left:56%;font:700 28px/1 'Space Mono',monospace;color:#ffe27a;text-shadow:2px 2px 0 #000;opacity:0}.dmg.go{animation:dmg-up .9s steps(8) 1}@keyframes dmg-up{0%{opacity:1}100%{opacity:0;transform:translateY(-42px)}}
-.max{position:absolute;left:12px;bottom:12px;display:flex;align-items:flex-end;gap:10px;max-width:72%}.max .av{font-size:44px;line-height:1;filter:drop-shadow(0 4px 0 #0007)}
+.max{position:absolute;left:12px;bottom:12px;display:flex;align-items:flex-end;gap:10px;max-width:72%}.max .av{width:62px;height:62px;border-radius:50%;object-fit:cover;flex:none;border:3px solid #fff;box-shadow:0 4px 0 #0007,0 0 0 3px var(--red)}
 .say{position:relative;background:#f7faf7;color:var(--ink);border:2px solid #fff;border-radius:6px;padding:9px 12px;font-size:13px;line-height:1.4}.say:before{content:"";position:absolute;left:-8px;bottom:12px;border:8px solid transparent;border-right-color:#f7faf7;border-left:0}.say b{display:block;color:var(--title);font-size:12px}
 .cat{display:inline-block;margin-bottom:10px;padding:5px 9px;border-radius:4px;background:var(--amber);color:var(--ink);font:700 11px/1 'Space Mono',monospace}
 .bug-q{margin:0 0 12px;font-size:16px;font-weight:600;line-height:1.4}
 .fact{padding:12px;border-radius:6px;background:#fff3d9;color:var(--ink);border-left:5px solid var(--amber);margin:6px 0 12px;line-height:1.5;font-size:14px}.fact b{display:block;color:var(--title);margin-bottom:4px}
 
 @media(max-width:900px){.g-app{grid-template-columns:minmax(0,1fr) minmax(230px,300px)}.team-panel{display:none}.game-choices{grid-template-columns:1fr}.game-choice{min-height:110px;flex-direction:row;flex-wrap:wrap;align-items:center}.game-choice .gc-text{flex:1;min-width:0}.game-choice .gc-meta{width:100%;margin-top:6px}.g-robo,.g-bug{grid-template-columns:minmax(0,1fr) minmax(250px,300px)}.turn-bar{order:5;width:100%}.turn-banner{top:96px}}
-@media(prefers-reduced-motion:reduce){.school-bus{animation:none;top:43%}.school-bus.second-bus{display:none}.student,.student .arm,.student .leg{animation:none;opacity:0}.cm-bob,.cm-pulse,.gc-badge svg,.gift-card,.bug,.slot.ok,.phone.alive,.phone.alive .slot.ok{animation:none!important}.turn-chip.is-turn,.pl.is-turn{animation:none!important;outline:3px solid #fff}.turn-banner{display:none}*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+@media(prefers-reduced-motion:reduce){.school-bus{animation:none;top:43%}.school-bus.second-bus{display:none}.student,.student .arm,.student .leg{animation:none;opacity:0}.cm-bob,.cm-pulse,.gc-badge svg,.gift-card,.bug,.slot.ok,.phone.alive,.phone.alive .slot.ok,.bus-fx{animation:none!important}.turn-chip.is-turn,.pl.is-turn{animation:none!important;outline:3px solid #fff}.turn-banner{display:none}*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
   </style>
   <script src="/_sdk/8fed440c6f94b5da.data_sdk.js" type="text/javascript" integrity="sha512-hrvcCCJ6nkL5gG3mdqPDbgyAf9a/fg/zBF51sU5N3rM1WmeSu8K36+6wn9TZeAZrLIonoaPBeVyFsXxXxZjq0w=="></script>
   <script src="/_sdk/336a49df5a82c939.editing_sdk.js" type="text/javascript" integrity="sha512-kW4iY7c9SZ3trXkzoTE65xax0DcYSa51ZKy2HG+dKjAzdAHckXWjbAVamldsupSSaGH2q0he8oo/VdmembI7Hw=="></script>
@@ -221,7 +231,7 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
     </svg>
     <div class="map-frame" role="region" aria-label="Planta aérea animada do SENAI CT Gurupi. Em telas pequenas, role horizontalmente para ver toda a planta." tabindex="0">
      <div id="site" data-template-id="industrial-site" class="canva-section site" aria-label="Mapa aéreo do SENAI CT Gurupi com galpões, ônibus e alunos animados">
-      <img data-template-id="map-badge-logo" class="canva-image map-badge-logo" loading="lazy"> <span data-template-id="map-badge" class="canva-tag map-badge"><span data-template-id="map-badge-label" class="canva-text map-badge-label">SENAI CT Gurupi</span></span>
+      <img data-template-id="map-badge-logo" class="canva-image map-badge-logo" src="logo-senai.png" alt="Logomarca SENAI" loading="lazy"> <span data-template-id="map-badge" class="canva-tag map-badge"><span data-template-id="map-badge-label" class="canva-text map-badge-label">SENAI CT Gurupi</span></span>
       <div class="road"></div>
       <div class="sidewalk"></div>
       <div class="sidewalk-right"></div>
@@ -298,7 +308,7 @@ body.pseudo-fs{position:fixed;inset:0;overflow:hidden;touch-action:none}body.pse
          </button>
          <button id="choice-bug" data-template-id="bug-choice" class="canva-button game-choice gc-bug" type="button">
           <span class="gc-badge" aria-hidden="true"><svg viewbox="0 0 48 48" aria-hidden="true"><rect x="13" y="13" width="22" height="26" rx="9" fill="#fff" /><circle cx="20" cy="24" r="2.6" fill="currentColor" /><circle cx="28" cy="24" r="2.6" fill="currentColor" /><path d="M18 13V8m12 5V8M13 22H5m8 8H5m30-8h8m-8 8h8M19 32h10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" /></svg></span>
-          <div class="gc-text"><strong data-template-id="bug-name" class="canva-text">Chefão Bug</strong><small data-template-id="bug-description" class="canva-text">Professor Max contra o Bug Gigante</small></div>
+          <div class="gc-text"><strong data-template-id="bug-name" class="canva-text">Chefão Bug</strong><small data-template-id="bug-description" class="canva-text">Instrutor Max contra o Bug Gigante</small></div>
           <span class="gc-meta"><span class="gc-tag">⏱ ~20 min</span><span class="gc-arrow" aria-hidden="true">→</span></span>
          </button>
         </div>
@@ -348,8 +358,8 @@ const soundButton=document.getElementById('sound-control'),soundStatus=document.
 let mapAudio,mapMaster,mapTimer,startedAt=0,lastStep=-1,cycle=-1,soundEnabled=false;
 function tone(freq,duration,volume,type='sine',end=freq){const t=mapAudio.currentTime,o=mapAudio.createOscillator(),g=mapAudio.createGain();o.type=type;o.frequency.setValueAtTime(freq,t);o.frequency.exponentialRampToValueAtTime(Math.max(1,end),t+duration);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(Math.max(.0002,volume),t+.015);g.gain.exponentialRampToValueAtTime(.0001,t+duration);o.connect(g).connect(mapMaster);o.start(t);o.stop(t+duration+.02)}
 function engine(){tone(92,.7,.12,'sawtooth',66);tone(48,.7,.075,'triangle',41)}
-function footstep(){tone(125,.075,.065,'triangle',58);tone(390,.035,.018,'square',180)}
-function busArrive(){tone(180,.16,.11,'triangle',105);tone(260,.22,.08,'sine',170)}
+function footstep(){tone(125,.09,.11,'triangle',58);tone(390,.045,.035,'square',180)}
+function busArrive(){tone(180,.16,.11,'triangle',105);tone(260,.22,.08,'sine',170);tone(523.25,.12,.1,'square',523.25);setTimeout(()=>{if(soundEnabled&&mapAudio)tone(659.25,.15,.11,'square',659.25)},130)}
 function busStop(){tone(420,.12,.07,'square',300);tone(300,.18,.06,'triangle',220)}
 function tick(){if(!soundEnabled||!mapAudio)return;const elapsed=(performance.now()-startedAt)/1000,phase=elapsed%36,c=Math.floor(elapsed/36);if(c!==cycle){cycle=c;lastStep=-1;busArrive()}let walking=false;for(const offset of [0,18]){const p=phase-offset;if(Math.floor(p*2)!==Math.floor((p-.07)*2)&&((p>=0&&p<1.9)||(p>=12&&p<13.5))){engine();if(p>=12&&p<13.5)busStop()}if(p>=2.5&&p<10.1)walking=true}if(walking){const step=Math.floor(phase/.288);if(step!==lastStep){lastStep=step;footstep()}}}
 function stopAudio(){soundEnabled=false;clearInterval(mapTimer);if(mapMaster&&mapAudio)mapMaster.gain.setTargetAtTime(0,mapAudio.currentTime,.015);soundButton.classList.remove('is-on');soundButton.setAttribute('aria-pressed','false')}
@@ -358,6 +368,46 @@ soundButton.addEventListener('click',async()=>{if(soundEnabled){stopAudio();retu
 motion.addEventListener('change',motionChange);motionChange();
 // Tenta iniciar o áudio do mapa assim que a experiência é carregada.
 if(!motion.matches)soundButton.click();
+
+/* ============================================================
+   MAPA: brinde do ônibus (clique nele a cada 10 voltas que aparece)
+   ============================================================ */
+const BUS_LAP_SECONDS=36,BUS_LAP_GIFT=10;
+function busLap(el){
+ if(!el.getAnimations)return -1;
+ const anim=el.getAnimations().find(a=>a.effect&&a.effect.getTiming);
+ if(!anim)return -1;
+ const delayMs=anim.effect.getTiming().delay||0;
+ let ct=anim.currentTime;if(ct&&typeof ct==='object')ct=ct.value;
+ if(typeof ct!=='number')return -1;
+ const iterMs=ct-delayMs;
+ return iterMs<0?-1:Math.floor(iterMs/1000/BUS_LAP_SECONDS)+1;
+}
+const buses=[...site.querySelectorAll('.school-bus')].map(el=>({el,lastGiftLap:-1}));
+function busGiftUpdate(){buses.forEach(b=>{const lap=busLap(b.el);b.el.classList.toggle('gift-ready',!motion.matches&&lap>0&&lap%BUS_LAP_GIFT===0&&lap!==b.lastGiftLap)})}
+setInterval(busGiftUpdate,500);busGiftUpdate();
+function busFx(el,texto,neutro){const fx=document.createElement('span');fx.className='bus-fx'+(neutro?' bus-fx-neutral':'');fx.textContent=texto;el.append(fx);setTimeout(()=>fx.remove(),2600)}
+function busClick(b){
+ if(b.el.dataset.busy)return;
+ const lap=busLap(b.el);
+ if(lap>0&&lap%BUS_LAP_GIFT===0&&lap!==b.lastGiftLap){
+  b.lastGiftLap=lap;b.el.classList.remove('gift-ready');b.el.dataset.busy='1';
+  const premio=BRINDES_LISTA[rand(0,BRINDES_LISTA.length-1)];
+  busFx(b.el,'🎁 '+premio+'!');
+  try{window.tocarSomBrinde&&window.tocarSomBrinde()}catch(_){}
+  soundStatus.textContent='Brinde do ônibus: '+premio+'! Procure a equipe SENAI para retirar.';
+  setTimeout(()=>{delete b.el.dataset.busy},2600);
+ }else{
+  busFx(b.el,'🚌 Brinde a cada 10 voltas!',true);
+ }
+}
+buses.forEach(b=>{
+ b.el.setAttribute('role','button');b.el.setAttribute('tabindex','0');
+ b.el.setAttribute('aria-label','Ônibus do SENAI, clique para ver se há brinde');
+ const handler=e=>{e.stopPropagation();busClick(b)};
+ b.el.addEventListener('click',handler);
+ b.el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();handler(e)}});
+});
 
 /* ============================================================
    MAPA: modais dos cursos
@@ -642,7 +692,8 @@ const ROBO_FASES=[
  {nome:'Desafio final',map:['RRRRggg','gggRggg','gggRRRg','gggggRg','gggggRG'],start:[0,0],limite:10,sol:['X3','R','X2','L','X2','R','X2','L','F'],conceito:'Sequência, repetição e condição juntas: é assim que um desenvolvedor pensa. Limite de 10 blocos!'}
 ];
 const ROBO_COND={livre:'caminho livre',bloqueado:'caminho bloqueado'};
-const ROBO_ACOES={F:'⬆️ Andar',L:'↰ Virar à esquerda',R:'↱ Virar à direita'};
+const ROBO_ACOES={F:['⬆️','Andar'],L:['↰','Virar à esquerda'],R:['↱','Virar à direita']};
+const roboAcaoTxt=k=>ROBO_ACOES[k][0]+' '+ROBO_ACOES[k][1];
 const roboCmd=s=>({c:s[0],n:+s.slice(1)||1});
 /* simulação pura (também usada no auto-teste) */
 function roboSimular(f,prog,regra){
@@ -678,7 +729,7 @@ function startRobo(){
 }
 function roboRender(){
  const f=ROBO_FASES[G.fase],c=content();G.prog=[];G.regra={};G.exec=false;G.concluida=false;
- c.innerHTML='<div class="g-robo"><section class="robo-left"><div class="robo-head"><b>Fase '+(G.fase+1)+' de 5 · '+f.nome+'</b><span>Levem o ônibus até o Galpão 05</span></div><div class="map-wrap" id="map-wrap"><div class="robo-map" id="robo-map"></div></div><div class="prof"><span class="av">👨‍🏫</span><div><b data-template-id="robo-professor" class="canva-text">Professor Max</b><p id="prof-msg"></p><div id="prof-act"></div></div></div></section><aside class="panel robo-side" id="robo-side"></aside></div>';
+ c.innerHTML='<div class="g-robo"><section class="robo-left"><div class="robo-head"><b>Fase '+(G.fase+1)+' de 5 · '+f.nome+'</b><span>Levem o ônibus até o Galpão 05</span></div><div class="map-wrap" id="map-wrap"><div class="robo-map" id="robo-map"></div></div><div class="prof"><img class="av" src="MaxTube.png" alt="Instrutor Max" loading="lazy"><div><b data-template-id="robo-professor" class="canva-text">Instrutor Max</b><p id="prof-msg"></p><div id="prof-act"></div></div></div></section><aside class="panel robo-side" id="robo-side"></aside></div>';
  c.querySelector('#prof-msg').textContent=f.conceito;
  const map=c.querySelector('#robo-map'),isR=(x,y)=>y>=0&&y<5&&x>=0&&x<7&&f.map[y][x]!=='g';
  f.map.forEach((row,y)=>[...row].forEach((ch,x)=>{
@@ -732,11 +783,11 @@ function roboRegraUI(side){
  const r=G.regra,full=r.cond&&r.entao&&r.senao;
  const act=Object.entries(ROBO_ACOES).map(([k,t])=>[k,t]);
  let step='',opts='';
- if(!r.cond){step='Vez do '+JOGADORES[G.turn].n+': escolha a CONDIÇÃO.';opts=[['livre','✅ Caminho à frente livre'],['bloqueado','⛔ Caminho à frente bloqueado']].map(o=>'<button type="button" class="blk" data-k="cond" data-v="'+o[0]+'"><span>'+o[1]+'</span></button>').join('')}
- else if(!r.entao){step='Vez do '+JOGADORES[G.turn].n+': o que fazer ENTÃO?';opts=act.map(o=>'<button type="button" class="blk" data-k="entao" data-v="'+o[0]+'"><span>'+o[1]+'</span></button>').join('')}
- else if(!r.senao){step='Vez do '+JOGADORES[G.turn].n+': o que fazer SENÃO?';opts=act.map(o=>'<button type="button" class="blk" data-k="senao" data-v="'+o[0]+'"><span>'+o[1]+'</span></button>').join('')}
+ if(!r.cond){step='Vez do '+JOGADORES[G.turn].n+': escolha a CONDIÇÃO.';opts=[['livre','✅','Caminho à frente livre'],['bloqueado','⛔','Caminho à frente bloqueado']].map(o=>'<button type="button" class="blk" data-k="cond" data-v="'+o[0]+'"><span class="t">'+o[1]+'</span><span>'+o[2]+'</span></button>').join('')}
+ else if(!r.entao){step='Vez do '+JOGADORES[G.turn].n+': o que fazer ENTÃO?';opts=act.map(o=>'<button type="button" class="blk" data-k="entao" data-v="'+o[0]+'"><span class="t">'+o[1][0]+'</span><span>'+o[1][1]+'</span></button>').join('')}
+ else if(!r.senao){step='Vez do '+JOGADORES[G.turn].n+': o que fazer SENÃO?';opts=act.map(o=>'<button type="button" class="blk" data-k="senao" data-v="'+o[0]+'"><span class="t">'+o[1][0]+'</span><span>'+o[1][1]+'</span></button>').join('')}
  else step='Regra pronta! Cliquem em Executar para ver o ônibus andar.';
- side.innerHTML='<h3 data-template-id="robo-rule-title" class="canva-text">Regra do ônibus</h3><div class="rule">SE <b>'+(r.cond?ROBO_COND[r.cond]:'___')+'</b><br>ENTÃO <b>'+(r.entao?ROBO_ACOES[r.entao]:'___')+'</b><br>SENÃO <b>'+(r.senao?ROBO_ACOES[r.senao]:'___')+'</b></div><p class="rule-step" id="rule-step">'+step+'</p><div class="rule-opts">'+opts+'</div><div class="rb-actions"><button type="button" class="action amber go" id="rb-go"'+(full?'':' disabled')+'>▶ Executar</button><button type="button" class="action alt" id="rb-clr">↺ Refazer</button><button type="button" class="action alt" id="rb-hint">💡 Dica</button></div>';
+ side.innerHTML='<h3 data-template-id="robo-rule-title" class="canva-text">Regra do ônibus</h3><div class="rule">SE <b>'+(r.cond?ROBO_COND[r.cond]:'___')+'</b><br>ENTÃO <b>'+(r.entao?roboAcaoTxt(r.entao):'___')+'</b><br>SENÃO <b>'+(r.senao?roboAcaoTxt(r.senao):'___')+'</b></div><p class="rule-step" id="rule-step">'+step+'</p><div class="rule-opts">'+opts+'</div><div class="rb-actions"><button type="button" class="action amber go" id="rb-go"'+(full?'':' disabled')+'>▶ Executar</button><button type="button" class="action alt" id="rb-clr">↺ Refazer</button><button type="button" class="action alt" id="rb-hint">💡 Dica</button></div>';
  side.querySelectorAll('.blk').forEach(b=>b.onclick=()=>{if(G.exec||G.concluida)return;G.regra[b.dataset.k]=b.dataset.v;nextTurn();roboRegraUI(side)});
  side.querySelector('#rb-go').onclick=roboExecutar;
  side.querySelector('#rb-clr').onclick=()=>{if(G.exec||G.concluida)return;G.regra={};roboRegraUI(side);roboBusReset();roboLimpaAcao()};
@@ -786,6 +837,33 @@ function roboFim(r){
    JOGO 3 — CHEFÃO BUG
    ============================================================ */
 const BUG_CATS={senai:{e:'🏫',t:'Mundo SENAI'},front:{e:'🎨',t:'Front-end'},back:{e:'🧠',t:'Back-end'},data:{e:'🗄️',t:'Banco de dados'},seg:{e:'🔐',t:'Segurança'}};
+/* ícone representativo para cada resposta, por palavra-chave (cobre o banco de perguntas; usa o emoji da categoria como alternativa) */
+const BUG_ICONES=[
+ [/^\d{2}\/\d{2}$/,'📅'],[/^\d+$/,'🔢'],
+ [/gurupi|palmas|araguaína/i,'🏙️'],[/serviço nacional/i,'🏫'],
+ [/desenvolvimento de sistemas|python, web/i,'💻'],[/automotiva|motorista/i,'🚗'],
+ [/eletrotécnica/i,'⚡'],[/logística/i,'📦'],
+ [/gerar energia/i,'☀️'],[/decorar/i,'🎨'],[/água da chuva/i,'💧'],
+ [/ônibus/i,'🚌'],[/helicóptero/i,'🚁'],[/barco/i,'⛵'],
+ [/administrativo/i,'🏢'],[/estacionamento/i,'🅿️'],
+ [/só desenho/i,'✏️'],[/culinária|cozinheiro/i,'🍳'],
+ [/desenvolvedor/i,'👨‍💻'],[/^html$/i,'🧱'],[/^excel$/i,'📊'],[/^word$/i,'📄'],
+ [/^css$/i,'🎨'],[/^sql$/i,'🗄️'],[/^python$/i,'🐍'],
+ [/conjunto de páginas|site/i,'🌐'],[/sem internet/i,'📴'],[/tipo de computador/i,'🖥️'],
+ [/dar ordens ao computador/i,'🧠'],[/digitar muito rápido/i,'⌨️'],[/consertar a tela/i,'🔧'],
+ [/laço de repetição/i,'🔁'],[/^imprimir$/i,'🖨️'],[/^desligar$/i,'🔌'],
+ [/javascript/i,'📜'],[/português/i,'🗣️'],[/photoshop/i,'🖌️'],
+ [/trava ou funciona/i,'🐞'],[/conserta sozinho/i,'✨'],[/desliga a luz/i,'💡'],
+ [/lugar organizado/i,'🗄️'],[/banco para guardar dinheiro/i,'🏦'],[/tipo de internet/i,'🌐'],
+ [/^select$/i,'🔎'],[/^correr$/i,'🏃'],[/salvar foto/i,'📷'],
+ [/planilha/i,'📊'],[/mesa de madeira/i,'🪵'],[/^um mapa$/i,'🗺️'],
+ [/controlar matrículas/i,'🗂️'],[/só desenhar/i,'✏️'],[/para nada/i,'🚫'],
+ [/123456|maria\d+/i,'⚠️'],[/t3ch|senha forte|[#!].*\d/i,'🔐'],
+ [/ignorar e avisar/i,'🙋'],[/clicar rápido/i,'⚠️'],[/repassar aos amigos/i,'📤'],
+ [/só você/i,'🙂'],[/todos os colegas/i,'👥'],[/qualquer pessoa/i,'❗'],
+ [/confirma quem está entrando/i,'🔑'],[/apaga os dados/i,'🗑️'],[/muda a cor da tela/i,'🎨']
+];
+function bugIcon(texto,catEmoji){const h=BUG_ICONES.find(([re])=>re.test(texto));return h?h[1]:catEmoji}
 /* formato: [pergunta, [correta, errada, errada], dica, "você sabia?"] */
 const BUG_BANCO={
  senai:[
@@ -832,13 +910,13 @@ function bugSacar(cat){const dk=G.decks;if(!dk[cat]||!dk[cat].length)dk[cat]=shu
 function startBug(){
  iniciarJogo('bug','Chefão Bug · Missão Dev',900,()=>{
   G.hp=120;G.vidas=3;G.rodada=0;G.decks={};G.roleIdx=0;G.lock=false;
-  G.onTimeout=()=>bugFim(false,'O tempo acabou e o Bug continua solto. Estudem as dicas do Professor Max e tentem de novo!');
+  G.onTimeout=()=>bugFim(false,'O tempo acabou e o Bug continua solto. Estudem as dicas do Instrutor Max e tentem de novo!');
   bugRender();
  });
 }
 function bugRender(){
  const c=content();
- c.innerHTML='<div class="g-bug"><section class="arena"><div class="bug-hud"><div class="hpbox">BUG GIGANTE<div class="hpbar"><i id="hp"></i></div></div><div>EQUIPE<div class="lives" id="lives">❤️❤️❤️</div></div></div><div class="boss"><div class="bug" id="bug">🪲</div><div class="dmg" id="dmg">-20</div></div><div class="max"><span class="av">👨‍🏫</span><div class="say"><b data-template-id="bug-professor" class="canva-text">Professor Max</b><span id="say">O Bug Gigante invadiu o sistema do SENAI! Respondam juntos para derrotá-lo.</span></div></div></section><aside class="panel" id="bug-side"></aside></div>';
+ c.innerHTML='<div class="g-bug"><section class="arena"><div class="bug-hud"><div class="hpbox">BUG GIGANTE<div class="hpbar"><i id="hp"></i></div></div><div>EQUIPE<div class="lives" id="lives">❤️❤️❤️</div></div></div><div class="boss"><div class="bug" id="bug">🪲</div><div class="dmg" id="dmg">-20</div></div><div class="max"><img class="av" src="MaxTube.png" alt="Instrutor Max" loading="lazy"><div class="say"><b data-template-id="bug-professor" class="canva-text">Instrutor Max</b><span id="say">O Bug Gigante invadiu o sistema do SENAI! Respondam juntos para derrotá-lo.</span></div></div></section><aside class="panel" id="bug-side"></aside></div>';
  bugPergunta();syncTurn();
 }
 function bugPergunta(){
@@ -849,7 +927,7 @@ function bugPergunta(){
  side.innerHTML='<h3>Desafio da vez</h3><span class="cat">'+meta.e+' '+meta.t+'</span><p class="bug-q"></p><div id="bug-opts"></div>';
  side.querySelector('.bug-q').textContent=q[0];
  const box=side.querySelector('#bug-opts');
- shuffle([0,1,2]).forEach(i=>{const b=document.createElement('button');b.type='button';b.className='blk';b.dataset.i=i;const s=document.createElement('span');s.textContent=q[1][i];b.append(s);b.onclick=()=>bugResp(i,b);box.append(b)});
+ shuffle([0,1,2]).forEach(i=>{const b=document.createElement('button');b.type='button';b.className='blk';b.dataset.i=i;const t=document.createElement('span');t.className='t';t.textContent=bugIcon(q[1][i],meta.e);const s=document.createElement('span');s.textContent=q[1][i];b.append(t,s);b.onclick=()=>bugResp(i,b);box.append(b)});
  bannerTurn();
 }
 function bugResp(i,btn){
